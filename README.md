@@ -3,12 +3,21 @@ This is a local poker clock which can freely be used in any of your games.
 
 ## How to use?
 ### Configure
-Before starting your game, open the `config.js` file and replace the timing and duration of the blinds.
+Before beginning your game, access the `config.js` file and adjust the timing and duration of the blinds accordingly.
 
-Once you have reached the maximum blind, the clock will take the last blind interval and repeat it (for instance, if your two last blinds were 10/20 and 20/40, it will see that there is a difference of 10 between the two and repeat that for all following levels).
+#### Blind Progression
+
+Upon reaching the maximum blind level, the clock will use the last blind interval as a reference and continue applying the same pattern.
+
+For example, if your final two blind levels were:
+
+- **10/20**
+- **20/40**
+
+The system will recognize the 10-unit difference and replicate it for all subsequent levels.
 
 ### Start
-Open the poker.html with your browser and click start.
+Open the `poker.html` with your browser and click start.
 
 ## Advice on blinds
 

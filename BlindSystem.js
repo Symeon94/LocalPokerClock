@@ -8,12 +8,7 @@ export default class BlindSystem {
             return this.blinds[level];
         }
         level -= this.blinds.length - 1;
-        let current = this.blinds[this.blinds.length - 1];
         let delta = this.blinds[this.blinds.length - 1] - this.blinds[this.blinds.length - 2];
-        while(level > 0) {
-            current += delta;
-            level--;
-        }
-        return current;
+        return this.blinds[this.blinds.length - 1] + level * delta;
     }
 }
