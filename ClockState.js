@@ -3,13 +3,13 @@ export default class ClockState {
         this.clockSetter = clockSetter;
     }
 
-    notifyChange(remainingTime, currentLevel) {
+    notifyChange(remainingTime, currentLevel, runState) {
         const state = {
             currentLevel,
             remainingTime,
+            runState,
             lastUpdate: Date.now()
         };
-        console.log(state);
         localStorage.setItem('pokerClockState', JSON.stringify(state));
     }
 
@@ -17,7 +17,7 @@ export default class ClockState {
         const saved = localStorage.getItem('pokerClockState');
         if (saved) {
             const state = JSON.parse(saved);
-            this.clockSetter.updateClock(state.remainingTime, state.currentLevel);
+            this.clockSetter.updateClock(state.remainingTime, state.currentLevel, state.runState);
         }
     }
 }

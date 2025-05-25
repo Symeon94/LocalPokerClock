@@ -1,3 +1,3 @@
 export const ClockObserver = {
-    notifyChange: function(remainingTime, currentLevel) {}
+    notifyChange: function(remainingTime, currentLevel, runState) {}
 };

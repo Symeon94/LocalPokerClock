@@ -1,6 +1,6 @@
 /* Poker Clock Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Inter, Arial, sans-serif;
     background-color: #222;
     color: #fff;
     text-align: center;
@@ -28,6 +28,7 @@ body {
     padding: 1.25rem 15rem;
     border-radius: 10px;
     margin: .5rem 0 .5rem 0;
+    border: 2px solid #0000;
 }
 
 .info {
@@ -39,11 +40,18 @@ body {
     font-size: 18px;
     padding: .5rem .75rem;
     margin: .75rem .5rem;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
     min-width: 120px;
+}
+
+.running {
+    border: 2px solid #3d5c44;
+}
+
+.pause {
+    border: 2px solid #3d3d3d;
 }
 
 .controls button:nth-child(1) {
