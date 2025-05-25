@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="poker.css">
+    <title>Poker Clock</title>
+  </head>
+  <body>
+    <script type=module src="poker.js"></script>
+    <div class="clock-container">
+      <div id="blinds">
+        <div id="blind-current">-- / --</div>
+        <div id="blind-next">-- / --</div>
+      </div>
+      <div class="timer" id="timer">--:--</div>
+      <div class="controls">
+        <button onclick="startClock()">Play</button>
+        <button onclick="pauseClock()">Pause</button>
+        <button onclick="resetClock()">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
