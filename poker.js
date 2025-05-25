@@ -2,10 +2,10 @@ import BlindSystem from "./BlindSystem.js";
 import Clock from "./Clock.js";
 import ClockDisplay from "./ClockDisplay.js";
 import ClockState from "./ClockState.js";
+import {blindsDurationMinutes, blindsValues} from "./config.js";
 
 // Change the below to change blinds
-const blindsDurationMinutes = 30;
-const blinds = new BlindSystem([10, 20, 30, 40, 50, 75, 100, 125, 150, 200])
+const blinds = new BlindSystem(blindsValues);
 
 // State
 const clock = new Clock(blindsDurationMinutes * 60);
