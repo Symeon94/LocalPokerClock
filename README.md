@@ -17,7 +17,14 @@ For example, if your final two blind levels were:
 The system will recognize the 10-unit difference and replicate it for all subsequent levels.
 
 ### Start
-Open the `poker.html` with your browser and click start.
+The browsers will not allow to open the file directly (complaining about CORS). So, to overcome that problem, make sure you have Python installed and navigate to the directory. Then run the following command:
+```
+python -m http.server 8000
+```
+The poker clock will then be accessible via URL `http://localhost:8000/poker.html`.
+
+## Features to be added
+There is currently no save of state, but it should be done at some point.
 
 ## Advice on blinds
 
